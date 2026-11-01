@@ -279,3 +279,14 @@ table.lines tr.top td.san { color: var(--best); }
   .brand { font-size: 16px; }
   .player-bar, .status { padding-left: 0; margin-left: 0; }
 }
+
+/* ---------- iPad / cảm ứng ---------- */
+.board, .board * { -webkit-user-select: none; -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent; }
+button, .btn, .tab, select, .lesson-card, .pz-dot { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+#lessonView { display: flex; flex-direction: column; gap: 10px; }
+#lessonView > * { margin: 0; }
+#lessonBack { align-self: flex-start; }
+@media (max-width: 900px) {
+  /* Màn hình dọc: bài tập lên trước, lý thuyết xuống dưới */
+  #lessonView .theory { order: 10; }
+}
