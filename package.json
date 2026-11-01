@@ -1,0 +1,10 @@
+{
+  "name": "co-vua-hoc-tap",
+  "version": "1.0.0",
+  "description": "Nền tảng luyện cờ vua: chiến thuật cơ bản, gợi ý nước tốt nhất kèm giải thích",
+  "private": true,
+  "scripts": {
+    "test": "node tests/perft.js && node tests/explain.js && node tests/puzzles.js",
+    "start": "npx --yes serve -l 8080 ."
+  }
+}
